@@ -1,0 +1,132 @@
+.wrapper {
+  padding-top: 100px;
+
+  background: white;
+}
+.galery-container {
+  height: 2100px;
+  background-color: white;
+  border-bottom: solid #111111;
+}
+
+.wrapper h1 {
+  text-align: center;
+  font-size: 70px;
+  font-family: "Courgette", cursive;
+}
+.image {
+  border-style: none;
+  width: 600px;
+  height: auto;
+  max-width: 828px;
+}
+.img-area {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.single-img {
+  padding: 0 20px 20px;
+}
+
+.buttonGalery {
+  background-color: #fff;
+  border-color: black;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.buttonGalery:hover {
+  background-color: #111111;
+  border-color: #fff;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.FormButtonGalery {
+  text-align: center;
+}
+
+/* img:hover {
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
+  transition: 0.9s;
+} */
+
+img {
+  -webkit-filter: grayscale(0) blur(0);
+  filter: grayscale(0) blur(0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+img:hover {
+  -webkit-filter: grayscale(100%) blur(0px);
+}
+
+@media screen and (max-width: 800px) {
+  .image {
+    border-style: none;
+    width: 600px;
+    height: auto;
+  }
+  .galery-container {
+    height: auto;
+    background-color: white;
+    padding-bottom: 200px;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image {
+    border-style: none;
+    width: 350px;
+    height: auto;
+  }
+  .galery-container {
+    height: 2700px;
+    background-color: white;
+    padding-bottom: 00px;
+  }
+  .wrapper h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: "Great Vibes", cursive;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .image {
+    border-style: none;
+    width: 300px;
+    height: auto;
+    display: block;
+    pointer-events: none;
+  }
+  .galery-container {
+    height: 2200px;
+    background-color: white;
+  }
+  .wrapper h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: "Great Vibes", cursive;
+  }
+}

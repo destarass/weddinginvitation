@@ -1,0 +1,156 @@
+.storyus-container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  object-fit: cover;
+  padding-top: 100px;
+  border-top: 5px solid #111111;
+}
+
+.H1storyus {
+  margin-top: 0px;
+  color: #111111;
+  text-align: center;
+  font-size: 70px;
+  font-family: "Courgette", cursive;
+}
+
+.StoryUsWrapper {
+  max-width: 1000px;
+  /* margin-top: 20px; */
+  margin: 0 auto;
+  display: grid;
+  /* grid-template-columns: 0fr 0fr 0fr; */
+  justify-content: center;
+  align-items: center;
+  grid-gap: 35px;
+  /* padding: 0 0px; */
+}
+
+.StoryUsCard {
+  margin-top: 100px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+  max-height: 1000px;
+  max-width: 1000px;
+  padding: 50px;
+  border: 2px solid grey;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.StoryUsCard:hover {
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.StoryUsH2 {
+  font-size: 50px;
+  text-align: justify;
+  font-weight: 500;
+
+  font-family: "Lovers Quarrel", cursive;
+}
+.StoryUsH2arab {
+  margin-bottom: 30px;
+  font-size: 40px;
+  text-align: justify;
+  font-weight: 100;
+}
+
+.ImgStoryUS {
+  border-style: none;
+  width: 100%;
+  max-height: 1000px;
+  max-width: 828px;
+  border: 5px solid #000000;
+  border-radius: 40px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 720px) {
+  .H1storyus {
+    font-size: 55px;
+  }
+  .StoryUsCard {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .storyus-container {
+    height: 1500px;
+
+    padding-top: 00px;
+    border-top: hidden;
+  }
+
+  .H1storyus {
+    margin-top: 100px;
+    font-size: 45px;
+    font-weight: 1000;
+  }
+
+  .StoryUsH2 {
+    font-size: 25px;
+    text-align: left;
+    font-family: "Rouge Script", cursive;
+  }
+  .StoryUsH2arab {
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 100;
+  }
+  .StoryUsCard {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ImgStoryUS {
+    height: auto;
+    width: 400px;
+  }
+  .storyus-container {
+    height: 1200px;
+
+    border-top: hidden;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ImgStoryUS {
+    height: auto;
+    width: 300px;
+  }
+  .storyus-container {
+    height: auto;
+
+    border-top: hidden;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .ImgStoryUS {
+    height: auto;
+    max-width: 500px;
+    margin: 30px;
+  }
+  .storyus-container {
+    height: 1200px;
+
+    border-top: hidden;
+  }
+}

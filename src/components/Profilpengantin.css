@@ -1,0 +1,202 @@
+.ProfilContainer {
+  background-color: #fff;
+  height: 1500px;
+  box-sizing: border-box;
+}
+.row {
+  padding-top: 50px;
+}
+.H1ProfilPengantin {
+  padding-top: 100px;
+  color: #111;
+  text-align: center;
+  font-size: 70px;
+  font-family: "Courgette", cursive;
+}
+.UcapanKata {
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  font-family: "Rouge Script", cursive;
+  font-size: 50px;
+  font-weight: 500;
+}
+.BorderKata {
+  margin-top: 400px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 5px solid grey;
+  border-bottom: 5px solid grey;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+  text-align: center;
+  /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.profilcowo {
+  /* border: 8px outset #000000; */
+  border-radius: 40px;
+  height: auto;
+  max-width: 400px;
+}
+.H2profilcowo {
+  margin-top: 30px;
+  font-family: "Courgette", cursive;
+  font-size: 55px;
+  font-weight: 100;
+}
+.Pprofilcowo {
+  padding-top: 30px;
+  font-size: 28px;
+  font-family: "Amiri", serif;
+}
+
+.profilcewe {
+  /* border: 8px outset #000000; */
+  border-radius: 40px;
+  /* height: auto; */
+  width: 400px;
+  height: auto;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+  }
+  .column2 {
+    padding-top: 450px;
+  }
+
+  .profilcowo {
+    border-radius: 40px;
+    height: auto;
+    max-width: 300px;
+  }
+
+  .H2profilcowo {
+    font-size: 60px;
+  }
+  .profilcewe {
+    border-radius: 40px;
+
+    max-width: 300px;
+    height: auto;
+  }
+  .ProfilContainer {
+    height: 2000px;
+  }
+
+  .BorderKata {
+    margin-top: 600px;
+    max-width: 1000vw;
+    margin-left: auto;
+    margin-right: auto;
+    border: hidden;
+  }
+
+  .UcapanKata {
+    text-align: center;
+    font-family: "Rouge Script", cursive;
+    font-size: 30px;
+  }
+
+  .column1 {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .H1ProfilPengantin {
+    font-size: 50px;
+  }
+  .profilcowo {
+    height: auto;
+    max-width: 300px;
+  }
+  .profilcewe {
+    height: auto;
+    max-width: 300px;
+  }
+  .H2profilcowo {
+    font-size: 50px;
+  }
+
+  .Pprofilcowo {
+    padding-top: 30px;
+    font-size: 19px;
+    font-family: "Amiri", serif;
+  }
+  .UcapanKata {
+    text-align: center;
+
+    font-family: "Rouge Script", cursive;
+    font-size: 25px;
+  }
+  .BorderKata {
+    margin-top: 650px;
+    max-width: 1000vw;
+    margin-left: auto;
+    margin-right: auto;
+    border: hidden;
+  }
+  .column2 {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .column2 {
+    margin-top: -100px;
+  }
+  .profilcowo {
+    height: auto;
+    width: 250px;
+  }
+  .profilcewe {
+    height: auto;
+    width: 250px;
+  }
+  .H2profilcowo {
+    font-size: 40px;
+  }
+
+  .Pprofilcowo {
+    padding-top: 10px;
+    font-size: 19px;
+    font-family: "Amiri", serif;
+  }
+  .UcapanKata {
+    text-align: center;
+
+    font-family: "Rouge Script", cursive;
+    font-size: 25px;
+    padding-bottom: auto;
+  }
+  .BorderKata {
+    margin-top: 550px;
+    max-width: 1000vw;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border: hidden;
+  }
+  .ProfilContainer {
+    background-color: #fff;
+    height: auto;
+    box-sizing: border-box;
+  }
+}

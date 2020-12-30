@@ -1,0 +1,203 @@
+.Ucapan-Container {
+  min-height: 100vh;
+
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+
+  /* Full height */
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: fit-content;
+  background-color: white;
+
+  align-items: center;
+}
+
+.Ucapan-Wrapper {
+  padding-top: 100px;
+}
+
+.form {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form > h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 70px;
+  font-family: "Courgette", cursive;
+}
+
+.judulinput {
+  font-size: 25px;
+  color: rgb(0, 0, 32);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.form > input,
+textarea {
+  padding: 20px;
+  border-radius: 20px;
+  width: 500px;
+  /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137); */
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  /* border: none; */
+  background: #fff;
+
+  outline: none;
+}
+
+.form > input:focus,
+textarea:focus {
+  border: 1px solid #111111;
+}
+
+.form > textarea {
+  height: 150px;
+  width: 500px;
+  min-height: 100px;
+}
+
+.form > label {
+  padding-bottom: 10px;
+  color: rgb(0, 0, 32);
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+.posisibutton {
+  text-align: center;
+}
+/* button */
+.glow-on-hover {
+  text-align: center;
+
+  font-size: 18px;
+  width: 150px;
+  height: 40px;
+  border: 5px double black;
+  outline: none;
+  color: black;
+  background: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: white;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* .form > button {
+  padding: 20px;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-top: 10px;
+  border: 5px solid #111111;
+  border-radius: 25px;
+}
+
+.form > button:hover {
+  background-color: #111111;
+  color: #111111;
+} */
+
+@media screen and (max-width: 480px) {
+  .form > h1 {
+    font-size: 60px;
+  }
+
+  .form > input,
+  textarea {
+    padding: 5px;
+    border-radius: 20px;
+    width: auto;
+    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137); */
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+    /* border: none; */
+    background: #fff;
+
+    outline: none;
+  }
+  .form > textarea {
+    height: 150px;
+    width: auto;
+    min-height: 100px;
+  }
+  .judulinput {
+    font-size: 20px;
+    color: rgb(0, 0, 32);
+  }
+}

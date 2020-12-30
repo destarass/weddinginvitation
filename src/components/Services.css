@@ -1,0 +1,211 @@
+.ServicesContainer {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #010606;
+}
+
+.ServicesH1 {
+  font-size: 70px;
+  font-family: "Courgette", cursive;
+  color: #fff;
+  margin-bottom: 100px;
+}
+
+.ServicesWrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  grid-gap: 35px;
+  padding: 0 0px;
+}
+
+.ServicesCard {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+  height: 350px;
+  max-width: 1000px;
+  width: 350px;
+  padding: 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.ServicesCard:hover {
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.ServicesIcon {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.ServicesH2 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-family: "Amiri", serif;
+}
+.ServicesH2Card1 {
+  font-size: 20px;
+
+  margin-bottom: 10px;
+  font-family: "Amiri", serif;
+}
+
+.ServicesH2Card3 {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Amiri", serif;
+  text-align: center;
+}
+
+.ServicesH2tempat {
+  font-size: 1rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.ServicesP {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.table-sesi {
+  padding-top: 60px;
+  text-align: justify;
+}
+
+.TRtimeA {
+  text-align: justify;
+  font-family: "Amiri", serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+.TRtime {
+  text-align: justify;
+  font-family: "Amiri", serif;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.H1judul {
+  text-align: center;
+  font-family: "Amiri", serif;
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.buttonCard {
+  background-color: #fff;
+  border-color: black;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.buttonCard:hover {
+  background-color: #111111;
+  border-color: #fff;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .ServicesContainer {
+    height: 1300px;
+  }
+
+  .ServicesH1 {
+    font-size: 65px;
+    margin-top: 20px;
+  }
+
+  .H1judul {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .ServicesIcon {
+    height: auto;
+    width: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .ServicesH2,
+  .ServicesH2Card1 {
+    font-size: 16px;
+    font-weight: 1000;
+    /* margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: "Xanh Mono", monospace; */
+  }
+  .ServicesCard {
+    height: auto;
+    /* max-width: 1000px; */
+    width: 300px;
+    padding: auto;
+  }
+  .TRtimeA {
+    font-size: 17px;
+  }
+  .TRtime {
+    font-size: 14px;
+  }
+  .ServicesH2Card3 {
+    font-size: 16px;
+    font-weight: 1000;
+  }
+
+  .buttonCard {
+    background-color: #fff;
+    border-color: black;
+    color: black;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ServicesContainer {
+    height: 1500px;
+  }
+  .ServicesWrapper {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+  .ServicesH1 {
+    font-size: 60px;
+    margin-top: 100px;
+  }
+}
